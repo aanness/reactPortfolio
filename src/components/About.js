@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import pdf from '../components/Ashley_Anness_Resume_2020Plus.pdf';
+
 export default class About extends Component {
    render() {
       let resumeData = this.props.resumeData;
@@ -15,8 +17,8 @@ export default class About extends Component {
                         resumeData.aboutme
                      }
                   </p>
-                  <button href="../images/Ashley_Anness_Resume_2020Plus.pdf">RESUME</button>
-
+                  <button href={pdf} target="_blank" rel="noreferrer">RESUME</button>
+                  
 
                </div>
             </div>
